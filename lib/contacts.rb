@@ -18,7 +18,7 @@ def remove_strawberry(contacts)
   contacts.each do |k, v|
     v.each do |k, v|
       if k == :favorite_ice_cream_flavors
-        k.delete_if {|val| val == "strawberry"}
+        v.delete_if {|val| val == "strawberry"}
       end
     end
   end
